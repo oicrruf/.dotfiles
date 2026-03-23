@@ -1,0 +1,15 @@
+# Secretos
+.env
+
+# Archivos de respaldo
+*.backup
+*.pre-oh-my-zsh
+*.zshrc.pre-oh-my-zsh
+.zsh_history
+.zsh_sessions/
+
+# Temporales de MacOS
+.DS_Store
+
+# Archivos locales de FZF
+.fzf.zsh

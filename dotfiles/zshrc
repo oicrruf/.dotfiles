@@ -1,0 +1,51 @@
+# Habilitar Powerlevel10k Instant Prompt.
+# Debe ir al principio de ~/.zshrc.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Homebrew Path (Siempre al principio para que mande sobre el sistema)
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+
+# 1. Primero Oh My Zsh (Define la base)
+export ZSH="$HOME/.oh-my-zsh"
+plugins=(git dotenv)
+source $ZSH/oh-my-zsh.sh
+
+# 2. Load Modules (Sorted for deterministic load order)
+if [ -d ~/.zsh_modules ]; then
+  for module in $(find -L ~/.zsh_modules -name "*.zsh" | sort); do
+    source "$module"
+  done
+fi
+
+# 3. Editor por defecto
+export EDITOR='nvim'
+
+if [ -n "$TMUX" ]; then
+  add-zsh-hook chpwd (){
+    tmux rename-window "$(basename "$PWD")"
+  }
+  tmux rename-window "$(basename "$PWD")"
+fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Cargar variables de entorno desde .env si existe
+if [ -f ~/.env ]; then
+  set -a
+  source ~/.env
+  set +a
+fi
+
+# Load Angular CLI autocompletion.
+command -v ng &>/dev/null && source <(ng completion script)
+
+# opencode
+export PATH=/Users/vmreyes/.opencode/bin:$PATH
+
+# Colima (profile: k8s)
+export DOCKER_HOST="unix://${HOME}/.colima/k8s/docker.sock"

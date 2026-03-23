@@ -1,0 +1,26 @@
+{
+  "en": {
+    "START": "🚀 Starting Terminal installer...",
+    "BREW_INSTALL": "📦 Installing Homebrew...",
+    "BREW_OK": "✅ Homebrew is already installed.",
+    "BUNDLE": "🛠 Installing dependencies from Brewfile...",
+    "OMZ_INSTALL": "🪄 Installing Oh My Zsh...",
+    "OMZ_OK": "✅ Oh My Zsh is already installed.",
+    "LINKS": "🔗 Creating symbolic links...",
+    "SECRETS": "🔑 Configuring secrets (.env)...",
+    "DONE": "✨ Installation completed. Restart your terminal or run 'source ~/.zshrc'",
+    "FONT_WARN": "⚠️ NOTE: Make sure to set 'MesloLGS NF' in your Terminal/Warp to see icons correctly."
+  },
+  "es": {
+    "START": "🚀 Iniciando instalador de Terminal...",
+    "BREW_INSTALL": "📦 Instalando Homebrew...",
+    "BREW_OK": "✅ Homebrew ya está instalado.",
+    "BUNDLE": "🛠 Instalando dependencias desde Brewfile...",
+    "OMZ_INSTALL": "🪄 Instalando Oh My Zsh...",
+    "OMZ_OK": "✅ Oh My Zsh ya está instalado.",
+    "LINKS": "🔗 Creando enlaces simbólicos...",
+    "SECRETS": "🔑 Configurando secretos (.env)...",
+    "DONE": "✨ Instalación completada. Reinicia tu terminal o ejecuta 'source ~/.zshrc'",
+    "FONT_WARN": "⚠️ NOTA: Asegúrate de configurar 'MesloLGS NF' en tu Terminal/Warp para ver los iconos correctamente."
+  }
+}
