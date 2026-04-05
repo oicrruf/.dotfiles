@@ -57,6 +57,21 @@ link_file "$DOTFILES_DIR/p10k.zsh" "$HOME/.p10k.zsh"
 [ -f "$DOTFILES_DIR/zshenv" ] && link_file "$DOTFILES_DIR/zshenv" "$HOME/.zshenv"
 [ -f "$DOTFILES_DIR/fzf.zsh" ] && link_file "$DOTFILES_DIR/fzf.zsh" "$HOME/.fzf.zsh"
 
+# Yabai, skhd, Sketchybar, Borders
+CONFIG_REPO_DIR="$(pwd)/config"
+mkdir -p "$HOME/.config/sketchybar"
+mkdir -p "$HOME/.config/borders"
+
+link_file "$CONFIG_REPO_DIR/yabai/yabairc" "$HOME/.yabairc"
+link_file "$CONFIG_REPO_DIR/skhd/skhdrc" "$HOME/.skhdrc"
+link_file "$CONFIG_REPO_DIR/sketchybar/sketchybarrc" "$HOME/.config/sketchybar/sketchybarrc"
+link_file "$CONFIG_REPO_DIR/borders/bordersrc" "$HOME/.config/borders/bordersrc"
+
+# Lazydocker config
+LAZYDOCKER_CONFIG_DIR="$HOME/Library/Application Support/lazydocker"
+mkdir -p "$LAZYDOCKER_CONFIG_DIR"
+link_file "$DOTFILES_DIR/lazydocker-config.yml" "$LAZYDOCKER_CONFIG_DIR/config.yml"
+
 # 5. Secrets
 echo -e "${BLUE}$(get_msg SECRETS)${NC}"
 if [ -f ".env" ]; then

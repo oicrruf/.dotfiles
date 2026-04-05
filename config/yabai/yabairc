@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Configuración de yabai para Tiling Window Management
+yabai -m config layout bsp
+yabai -m config window_placement second_child
+
+# Gaps y Padding estilo Hyprland
+yabai -m config top_padding 65
+yabai -m config bottom_padding 10
+yabai -m config left_padding 10
+yabai -m config right_padding 10
+yabai -m config window_gap 12
+
+# Ratón
+yabai -m config mouse_modifier alt
+yabai -m config mouse_drop_action swap
+
+# Reglas para apps que no deben ser Tiling
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Activity Monitor$" manage=off
+
+echo "yabai configuration loaded.."
