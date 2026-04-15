@@ -28,3 +28,6 @@ function y() {
 	rm -f -- "$tmp"
 }
 alias tree='eza --tree --icons'
+
+# Ollama local AI
+alias oll='ollama run qwen2.5-coder:7b'

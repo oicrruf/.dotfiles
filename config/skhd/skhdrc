@@ -23,6 +23,10 @@ alt - 3 : yabai -m space --focus 3
 alt - 4 : yabai -m space --focus 4
 alt - 5 : yabai -m space --focus 5
 
+# --- Crear / Eliminar Espacios ---
+alt - n : yabai -m space --create
+shift + alt - d : yabai -m space --destroy
+
 # --- Mover a Espacio (Shift + Alt + 1..5) ---
 shift + alt - 1 : yabai -m window --space 1
 shift + alt - 2 : yabai -m window --space 2
@@ -31,7 +35,7 @@ shift + alt - 4 : yabai -m window --space 4
 shift + alt - 5 : yabai -m window --space 5
 
 # --- Reiniciar Servicios ---
-shift + alt - r : yabai --restart-service; sketchybar --reload; brew services restart borders
+shift + alt - r : yabai --restart-service
 
 # --- Abrir Terminal ---
 alt - return : open -n -a Terminal

@@ -38,7 +38,7 @@ This configuration manages modern, high-performance tools written in Rust and Go
 *   **[lazydocker](https://github.com/jesseduffield/lazydocker):** Terminal UI for Docker management (alias: `lzd`).
 *   **[direnv](https://direnv.net/):** Auto-load/unload environment variables on folder entry.
 *   **[neovim](https://neovim.io/):** Extensible text editor (alias: `vim`).
-*   **[Colima](https://github.com/abiosoft/colima):** Lightweight Docker & Kubernetes runtime.
+*   **[Colima](https://github.com/abiosoft/colima):** Lightweight Docker & Kubernetes runtime. Configured as a system service (auto-starts on login) with the `default` profile (2 CPU / 2GB RAM / 20GB disk).
 
 ---
 

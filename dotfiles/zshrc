@@ -47,5 +47,8 @@ command -v ng &>/dev/null && source <(ng completion script)
 # opencode
 export PATH=/Users/vmreyes/.opencode/bin:$PATH
 
-# Colima (profile: k8s)
-export DOCKER_HOST="unix://${HOME}/.colima/k8s/docker.sock"
+# OpenClaw Completion
+[ -f "/Users/vmreyes/.openclaw/completions/openclaw.zsh" ] && source "/Users/vmreyes/.openclaw/completions/openclaw.zsh"
+
+# Added by Antigravity
+export PATH="/Users/vmreyes/.antigravity/antigravity/bin:$PATH"

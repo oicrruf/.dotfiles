@@ -33,7 +33,7 @@ Estas son las aplicaciones principales que gestiona el instalador a través de `
 *   **[lazydocker](https://github.com/jesseduffield/lazydocker):** Interfaz TUI para gestionar Docker (alias `lzd`).
 *   **[direnv](https://direnv.net/):** Carga/descarga automática de variables de entorno al entrar en carpetas.
 *   **[neovim](https://neovim.io/):** Editor de texto extensible (alias `vim`).
-*   **[Colima](https://github.com/abiosoft/colima):** Runtime ligero para contenedores y Kubernetes.
+*   **[Colima](https://github.com/abiosoft/colima):** Runtime ligero para contenedores y Kubernetes. Configurado como servicio del sistema (inicia automáticamente al arrancar) con el perfil `default` (2 CPU / 2GB RAM / 20GB disco).
 
 ---
 

@@ -1,0 +1,36 @@
+gui:
+  theme:
+    activeBorderColor:
+      - green
+      - bold
+    inactiveBorderColor:
+      - white
+    optionsTextColor:
+      - blue
+    selectedLineBgColor:
+      - blue
+    selectedRangeBgColor:
+      - blue
+    cherryPickedCommitColor:
+      - cyan
+    cherryPickedCommitBgColor:
+      - blue
+    markedBaseCommitColor:
+      - yellow
+    unstagedChangesColor:
+      - red
+  showBottomLine: true
+  showCommandLog: true
+  showFileTree: true
+  sidePanelWidth: 0.33
+  showIcons: true # Requiere Nerd Font (que ya tienes instalada)
+
+reporting: "off"
+checkforupdates: true
+
+customCommands:
+  containers:
+    - name: "Prune system"
+      command: "docker system prune -f"
+      description: "Remove all unused containers, networks, images"
+      context: "global"
