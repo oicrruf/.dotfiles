@@ -14,7 +14,6 @@ brew "docker"                 # Docker CLI
 brew "docker-buildx"          # Docker Buildx plugin
 brew "docker-compose"         # Docker Compose
 brew "eza"                    # Modern replacement for 'ls'
-brew "direnv"                 # Environment variable manager per directory
 brew "fd"                     # Simple, fast and user-friendly alternative to 'find'
 brew "ffmpeg"                 # Multimedia framework
 brew "fzf"                    # Command-line fuzzy finder

@@ -69,5 +69,4 @@ chmod +x install.sh
     -   Tool-specific paths and keys (like `JAVA_HOME` or `NVM_DIR`) are defined in `modules/lang/lang.zsh`.
 -   **Secrets Management:** Sensitive information should be stored in `~/.env`. The installer initializes this from `.env.example`.
 -   **Dependency Management:** All system dependencies should be declared in the `Brewfile` to ensure consistent environments across machines.
--   **Automatic Loading:** Use `direnv` for project-specific environment variables by creating `.envrc` files in target directories.
 

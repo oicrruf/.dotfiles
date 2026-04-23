@@ -36,7 +36,6 @@ This configuration manages modern, high-performance tools written in Rust and Go
 
 ### Development & Infrastructure
 *   **[lazydocker](https://github.com/jesseduffield/lazydocker):** Terminal UI for Docker management (alias: `lzd`).
-*   **[direnv](https://direnv.net/):** Auto-load/unload environment variables on folder entry.
 *   **[neovim](https://neovim.io/):** Extensible text editor (alias: `vim`).
 *   **[Colima](https://github.com/abiosoft/colima):** Lightweight Docker & Kubernetes runtime. Configured as a system service (auto-starts on login) with the `default` profile (2 CPU / 2GB RAM / 20GB disk).
 
@@ -69,4 +68,4 @@ The configuration is modular and located in `~/.zsh_modules/`:
 
 Secrets are managed via `~/.env`:
 1. The `.env` file is git-ignored to prevent leaks.
-2. **direnv** automatically loads secrets when entering a project folder (requires running `direnv allow` once).
+2. The installer initializes this from `.env.example`.

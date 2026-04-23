@@ -31,7 +31,6 @@ Estas son las aplicaciones principales que gestiona el instalador a través de `
 
 ### Desarrollo e Infraestructura
 *   **[lazydocker](https://github.com/jesseduffield/lazydocker):** Interfaz TUI para gestionar Docker (alias `lzd`).
-*   **[direnv](https://direnv.net/):** Carga/descarga automática de variables de entorno al entrar en carpetas.
 *   **[neovim](https://neovim.io/):** Editor de texto extensible (alias `vim`).
 *   **[Colima](https://github.com/abiosoft/colima):** Runtime ligero para contenedores y Kubernetes. Configurado como servicio del sistema (inicia automáticamente al arrancar) con el perfil `default` (2 CPU / 2GB RAM / 20GB disco).
 
@@ -64,4 +63,4 @@ La configuración se divide en módulos dentro de `~/.zsh_modules/`:
 
 El sistema utiliza un archivo `~/.env` para gestionar claves de API de forma segura.
 1. El archivo `.env` en la raíz está en el `.gitignore` para evitar fugas.
-2. Al entrar en carpetas de proyecto, **direnv** cargará automáticamente los secretos si existe un `.env` (requiere ejecutar `direnv allow` la primera vez).
+2. El instalador inicializa este archivo desde `.env.example`.

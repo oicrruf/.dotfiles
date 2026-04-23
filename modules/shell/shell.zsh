@@ -13,7 +13,6 @@ alias help='tldr'
 # Plugins & Interactive tools
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-eval "$(direnv hook zsh)"
 
 bindkey '^[[1;3C' forward-word
 bindkey '^ ' autosuggest-accept
